@@ -1,10 +1,43 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Create a Github repository
 
-In the project directory, you can run:
+cd youtube-react
+git init
 
-### `npm start`
+#### connect your local repo to the repo on Github
+
+git remote add origin git@github.com:<YOUR_REPO_NAME>.git
+
+#### add all files that create-react-app has created to the repository
+
+git add -A
+git commit -m "initial commit"
+git push -u origin master
+
+now go clean up the boilerplate code, removing the logo
+
+#### `npm install node-sass`
+
+#### Install and hook up import 'semantic-ui'
+
+`npm i semantic-ui-react`
+`npm i semantic-ui-css`
+
+- in index.js add this:
+  `import 'semantic-ui-css/semantic.min.css';`
+
+### Build the nav bar
+
+- Create an assets/images folder under src.
+- Get a logo and store it there.
+- Create a containers folder under src.
+- Create a HeaderNav.js and HeaderNav.scss file in HeaderNav
+    <Menu borderless className='top-menu' fixed='top'>
+- borderless removes the bars between menu items
+- fixed=top make the top menu "sticky"
+- build the nav bar
+- Add four Menu.Item elements under a Menu.Menu position="right" with four icons.
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -26,14 +59,6 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 

@@ -1,0 +1,22 @@
+@import '../../../../styles/shared.scss';
+
+
+/*  For layout purposes we wrap the content on the left into a
+ .subscription div element that serves as a flex container. 
+ We force the flex container to maximise the space between 
+ its elements by setting justify-content: space-between. 
+ The align-items: center property centers the div content vertically. */
+.subscription {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    i.icon {
+        color: $red;
+    }
+
+    .new-videos-count {
+        color: $grey;
+    }
+}
