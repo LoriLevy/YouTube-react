@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideBarItem Renders an EMPTY SideBarItem 1`] = `
+<MenuItem
+  className="sidebar-item "
+>
+  <div
+    className="sidebar-item-alignment-container"
+  >
+    <span>
+      <Icon
+        as="i"
+        size="large"
+      />
+       
+    </span>
+    <span />
+  </div>
+</MenuItem>
+`;
+
+exports[`SideBarItem renders SideBarItem 1`] = `
+<MenuItem
+  className="sidebar-item "
+>
+  <div
+    className="sidebar-item-alignment-container"
+  >
+    <span>
+      <Icon
+        as="i"
+        name="fire"
+        size="large"
+      />
+       
+    </span>
+    <span>
+      Trending
+    </span>
+  </div>
+</MenuItem>
+`;
+
+exports[`SideBarItem renders SideBarItem that is not highlightd 1`] = `
+<MenuItem
+  className="sidebar-item "
+>
+  <div
+    className="sidebar-item-alignment-container"
+  >
+    <span>
+      <Icon
+        as="i"
+        name="fire"
+        size="large"
+      />
+       
+    </span>
+    <span>
+      Trending
+    </span>
+  </div>
+</MenuItem>
+`;
+
+exports[`SideBarItem renders SideBarItem that is not highlighted 1`] = `
+<MenuItem
+  className="sidebar-item "
+>
+  <div
+    className="sidebar-item-alignment-container"
+  >
+    <span>
+      <Icon
+        as="i"
+        name="fire"
+        size="large"
+      />
+       
+    </span>
+    <span>
+      Trending
+    </span>
+  </div>
+</MenuItem>
+`;
+
+exports[`SideBarItem renders highlighted SideBarItem 1`] = `
+<MenuItem
+  className="sidebar-item "
+>
+  <div
+    className="sidebar-item-alignment-container"
+  >
+    <span>
+      <Icon
+        as="i"
+        name="fire"
+        size="large"
+      />
+       
+    </span>
+    <span>
+      Trending
+    </span>
+  </div>
+</MenuItem>
+`;
+
+exports[`SideBarItem renders highlighted SideBarItem 2`] = `
+<MenuItem
+  className="sidebar-item "
+>
+  <div
+    className="sidebar-item-alignment-container"
+  >
+    <span>
+      <Icon
+        as="i"
+        name="fire"
+        size="large"
+      />
+       
+    </span>
+    <span>
+      Trending
+    </span>
+  </div>
+</MenuItem>
+`;
+
+exports[`SideBarItem renders highlighted SideBarItem that navigates to /feed/trending 1`] = `
+<MenuItem
+  className="sidebar-item "
+>
+  <div
+    className="sidebar-item-alignment-container"
+  >
+    <span>
+      <Icon
+        as="i"
+        name="fire"
+        size="large"
+      />
+       
+    </span>
+    <span>
+      Trending
+    </span>
+  </div>
+</MenuItem>
+`;
+
+exports[`SideBarItem renders highlighted sidebar item 1`] = `
+<MenuItem
+  className="sidebar-item "
+>
+  <div
+    className="sidebar-item-alignment-container"
+  >
+    <span>
+      <Icon
+        as="i"
+        size="large"
+      />
+       
+    </span>
+    <span />
+  </div>
+</MenuItem>
+`;

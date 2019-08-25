@@ -5,7 +5,7 @@ import './Subscription.scss';
 
 export function Subscription(props) {
 
-    let rightEle, emt = null;
+    let rightElement = null;
     const { broadcasting, amountNewVideos } = props;
     if (broadcasting) {
         rightElement = <Icon name='signal' />;

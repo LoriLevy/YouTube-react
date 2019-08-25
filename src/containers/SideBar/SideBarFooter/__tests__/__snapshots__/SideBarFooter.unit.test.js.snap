@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideBarFooter it renders 1`] = `
+<Fragment>
+  <div
+    className="footer-block"
+  >
+    <div>
+      About
+    </div>
+    <div>
+      Creator
+    </div>
+    <div>
+      Developers +MYTube
+    </div>
+    <div>
+      Legal
+    </div>
+  </div>
+  <div
+    className="footer-block"
+  >
+    <div>
+      Terms Privacy
+    </div>
+    <div>
+      Policy & Safety
+    </div>
+    <div>
+      Test new features
+    </div>
+  </div>
+  <div
+    className="footer-block"
+  >
+    <div>
+      All prices include VAT
+    </div>
+  </div>
+  <div
+    className="footer-block"
+  >
+    <div>
+      © MYTube.com - A Youtube clone for my own educational purposes under fair use.
+    </div>
+  </div>
+</Fragment>
+`;
