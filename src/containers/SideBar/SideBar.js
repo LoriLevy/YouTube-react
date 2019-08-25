@@ -21,6 +21,7 @@ export class SideBar extends React.Component {
                 <SideBarItem label='Report history' icon='flag' />
                 <Divider className="divider-color" />label='Help' icon='help circle' />
                 <SideBarItem label='Send feedback' icon='comment' />
+                
             </Menu>
         );
     }
