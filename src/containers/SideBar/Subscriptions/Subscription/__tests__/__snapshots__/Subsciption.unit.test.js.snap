@@ -1,5 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Subscription Empty subscription renders 1`] = `
+<MenuItem>
+  <div
+    className="subscription"
+  >
+    <div>
+      <Image
+        as="img"
+        avatar={true}
+        src="http://via.placeholder.com/28x28"
+        ui={true}
+      />
+      <span />
+    </div>
+  </div>
+</MenuItem>
+`;
+
 exports[`Subscription Empty subscriptions renders 1`] = `
 <MenuItem>
   <div
@@ -14,6 +32,108 @@ exports[`Subscription Empty subscriptions renders 1`] = `
       />
       <span />
     </div>
+  </div>
+</MenuItem>
+`;
+
+exports[`Subscription Subscription renders 1`] = `
+<MenuItem>
+  <div
+    className="subscription"
+  >
+    <div>
+      <Image
+        as="img"
+        avatar={true}
+        src="http://via.placeholder.com/28x28"
+        ui={true}
+      />
+      <span />
+    </div>
+  </div>
+</MenuItem>
+`;
+
+exports[`Subscription briadcasting Subscription renders  1`] = `
+<MenuItem>
+  <div
+    className="subscription"
+  >
+    <div>
+      <Image
+        as="img"
+        avatar={true}
+        src="http://via.placeholder.com/28x28"
+        ui={true}
+      />
+      <span />
+    </div>
+  </div>
+</MenuItem>
+`;
+
+exports[`Subscription broadcasting Subscription renders  1`] = `
+<MenuItem>
+  <div
+    className="subscription"
+  >
+    <div>
+      <Image
+        as="img"
+        avatar={true}
+        src="http://via.placeholder.com/28x28"
+        ui={true}
+      />
+      <span />
+    </div>
+  </div>
+</MenuItem>
+`;
+
+exports[`Subscription non-broadcasting Subscription renders  1`] = `
+<MenuItem>
+  <div
+    className="subscription"
+  >
+    <div>
+      <Image
+        as="img"
+        avatar={true}
+        src="http://via.placeholder.com/28x28"
+        ui={true}
+      />
+      <span>
+        Loritest
+      </span>
+    </div>
+    <Icon
+      as="i"
+      name="signal"
+    />
+  </div>
+</MenuItem>
+`;
+
+exports[`Subscription non-broadcasting Subscription with new videos renders  1`] = `
+<MenuItem>
+  <div
+    className="subscription"
+  >
+    <div>
+      <Image
+        as="img"
+        avatar={true}
+        src="http://via.placeholder.com/28x28"
+        ui={true}
+      />
+      <span>
+        Loritest
+      </span>
+    </div>
+    <Icon
+      as="i"
+      name="signal"
+    />
   </div>
 </MenuItem>
 `;

@@ -1,3 +1,8 @@
 .side-bar-header {
-    color: #6d6d6d;
+  color: #6d6d6d;
+}
+
+/* Overwrite Semantic UI for this class */
+.ui.menu .item:not(:first-of-type) {
+  padding: 0.4em 1.14285714em !important;
 }

@@ -12,7 +12,7 @@ exports[`SideBarFooter it renders 1`] = `
       Creator
     </div>
     <div>
-      Developers +MYTube
+      Developers +ViewTube
     </div>
     <div>
       Legal
@@ -42,7 +42,7 @@ exports[`SideBarFooter it renders 1`] = `
     className="footer-block"
   >
     <div>
-      © MYTube.com - A Youtube clone for my own educational purposes under fair use.
+      © ViewTube.com - A Youtube clone for my own educational purposes under fair use.
     </div>
   </div>
 </Fragment>
