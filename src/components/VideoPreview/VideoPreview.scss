@@ -1,0 +1,55 @@
+@import "../../styles/shared.scss";
+
+.video-preview {
+  display: grid; /* Grid parent */
+  grid: 118px auto / 210px; /* Row height = 118px / Column width = 210px  */
+  padding: 1rem 1.2rem;
+}
+
+.video-info {
+  grid-row: 2 / 3; /* position: between second and third row */
+  grid-column: 1 / 2; /* position: between first and second column */
+  color: $text-color-dark;
+
+  .video-preview-metadata-container {
+    padding-top: 5px;
+    font-size: 1.1rem;
+  }
+  .channel-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.1rem;
+  }
+}
+
+.show-max-two-lines {
+  overflow: hidden;
+  line-height: 1.4em;
+  max-height: 2.8em;
+
+  .semi-bold {
+    font-weight: 600;
+  }
+}
+
+.image-container {
+  position: relative;
+  grid-row: 1 / 2; /* position: between first and second row */
+  grid-column: 1 / 2; /* position: between first and second column */
+
+  /* Video duration label at bottom right */
+  .time-label {
+    position: absolute;
+    background: $text-color-dark;
+    bottom: 0;
+    right: 0;
+    opacity: 0.8;
+    border-radius: 2px;
+    font-weight: 500;
+    color: $white;
+    margin: 4px;
+    padding: 2px 4px;
+    line-height: 12px;
+  }
+}

@@ -1,5 +1,17 @@
-$grey: #888888;
+/* Colors */
+$grey: #888;
 $red: #ff0002;
 $black: #4c4d4f;
+$white: #fff;
+$text-color-dark: #111;
+
+/* Header */
 $header-nav-height: 64px;
+
+/* SideBar */
 $sidebar-left-width: 17rem;
+
+/* Overwrite Semantic UI for this class */
+.ui.menu .item:not(:first-of-type) {
+  padding: 0.4em 1.14285714em !important;
+}
