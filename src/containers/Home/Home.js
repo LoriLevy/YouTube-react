@@ -1,13 +1,21 @@
 import React from "react";
-import { VideoPreview } from "../../components/VideoPreview/VideoPreview";
 import "./Home.scss";
+import "./Home-mq.scss";
+import { VideoGrid } from "../../components/VideoGrid/VideoGrid";
+import { SideBar } from "../SideBar/SideBar";
 
 export class Home extends React.Component {
   render() {
     return (
-      <div className="home">
-        <VideoPreview />
-      </div>
+      <>
+        <SideBar />
+        <div className="home">
+          <div className="video-grid-container">
+            <VideoGrid title="Trending" />
+            <VideoGrid title="Antique Dolls" hideDivider={true} />
+          </div>
+        </div>
+      </>
     );
   }
 }
