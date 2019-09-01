@@ -1,6 +1,6 @@
 .video-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex; /* align elements horizontally */
+  flex-wrap: wrap; /* just in case there is not enough room */
 
   & > * {
     margin-left: 4px;

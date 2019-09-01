@@ -1,0 +1,12 @@
+@import "../../styles/shared.scss";
+
+.app-layout {
+  & > *:not(:first-child) {
+    margin-top: $header-nav-height;
+  }
+
+  /* Make the scroll bar thinner */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+}

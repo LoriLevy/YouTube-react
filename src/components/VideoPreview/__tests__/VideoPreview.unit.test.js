@@ -5,6 +5,6 @@ import { VideoPreview } from "../VideoPreview";
 describe(VideoPreview, () => {
   test("it renders", () => {
     const wrapper = shallow(<VideoPreview />);
-    expect(wrapper).toMatchSnapshot;
+    expect(wrapper).toMatchSnapshot();
   });
 });
