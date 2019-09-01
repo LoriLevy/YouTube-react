@@ -26,23 +26,10 @@ now go clean up the boilerplate code, removing the logo
 
 - in index.js add this:
   `import 'semantic-ui-css/semantic.min.css';`
-
-### Build the nav bar
-
-- Create an assets/images folder under src.
-- Get a logo and store it there.
-- Create a containers folder under src.
-- Create a HeaderNav.js and HeaderNav.scss file in HeaderNav
-    <Menu borderless className='top-menu' fixed='top'>
-- borderless removes the bars between menu items
-- fixed=top make the top menu "sticky"
-- build the nav bar
-- Add four Menu.Item elements under a Menu.Menu position="right" with four icons.
-
-Runs the app in the development mode.<br>
+Run the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
+The page reloads if you make edits.<br>
 You will also see any lint errors in the console.
 
 ### `npm test`
@@ -61,6 +48,15 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### `install Yarn`
+For Mac developers, run this from the terminal:
+
+`    brew install yarn`
+<br>
+After you install yarn you can use Yarn to start your app and your tests.<br>
+`    yarn start`<br>
+`    yarn test`
+
 
 ## Learn More
 
