@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The video  the component with the id 1`] = `
+<iframe
+  allow="autoplay; encrypted-media"
+  allowFullScreen={true}
+  frameBorder="0"
+  height="350"
+  src="https://www.youtube.com/embed/DqUQW3xyQ1c?autoplay=1"
+  title="video"
+  width="560"
+/>
+`;
+
+exports[`The video renders the compnent correctly 1`] = `""`;
+
+exports[`The video renders the component correctly 1`] = `""`;
+
+exports[`The video renders the component with the id 1`] = `
+<iframe
+  allow="autoplay; encrypted-media"
+  allowFullScreen={true}
+  frameBorder="0"
+  height="350"
+  src="https://www.youtube.com/embed/DqUQW3xyQ1c?autoplay=1"
+  title="video"
+  width="560"
+/>
+`;
+
+exports[`Video renders video component correctly 1`] = `
+<iframe
+  allow="autoplay; encrypted-media"
+  allowFullScreen={true}
+  frameBorder="0"
+  height="350"
+  src="https://www.youtube.com/embed/DqUQW3xyQ1c?autoplay=1"
+  title="video"
+  width="560"
+/>
+`;
+
+exports[`renders video component correctly 1`] = `
+<iframe
+  allow="autoplay; encrypted-media"
+  allowFullScreen={true}
+  frameBorder="0"
+  height="350"
+  src="https://www.youtube.com/embed/DqUQW3xyQ1c?autoplay=1"
+  title="video"
+  width="560"
+/>
+`;
+
+exports[`renders video component with the id 1`] = `
+<iframe
+  allow="autoplay; encrypted-media"
+  allowFullScreen={true}
+  frameBorder="0"
+  height="350"
+  src="https://www.youtube.com/embed/DqUQW3xyQ1c?autoplay=1"
+  title="video"
+  width="560"
+/>
+`;

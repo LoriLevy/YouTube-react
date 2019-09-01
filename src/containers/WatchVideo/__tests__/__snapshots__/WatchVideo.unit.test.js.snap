@@ -5,3 +5,13 @@ exports[`WatchVideo it renders 1`] = `
   Watch Video component goes here
 </div>
 `;
+
+exports[`WatchVideo renders 1`] = `
+<div
+  className="eighty-percent"
+>
+  <Video
+    id="DqUQW3xyQ1c"
+  />
+</div>
+`;
