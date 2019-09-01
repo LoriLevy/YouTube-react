@@ -1,4 +1,4 @@
-// This optional code is used to register a service worker.
+// This optional code is used to register a service worker, and used to be named registerServiceWorker in earlier versions of React.
 // register() is not called by default.
 
 // This lets the app load faster on subsequent visits in production, and gives
@@ -7,6 +7,8 @@
 // existing tabs open on the page have been closed, since previously cached
 // resources are updated in the background.
 
+// The service worker is a web API that helps you cache your assets and other files so that when the user is 
+// offline or on slow network, he/she can still see results on the screen, so it helps you build a better user experience
 // To learn more about the benefits of this model and instructions on how to
 // opt-in, read https://bit.ly/CRA-PWA
 

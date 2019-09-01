@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WatchVideo it renders 1`] = `
+<div>
+  Watch Video component goes here
+</div>
+`;

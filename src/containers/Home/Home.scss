@@ -1,11 +1,12 @@
 @import "../../styles/shared.scss";
 
 .home {
-  margin-top: $header-nav-height;
+  //margin-top: $header-nav-height;
   margin-left: $sidebar-left-width;
-  display: grid;
-  grid: auto/auto;
-  justify-content: center;
+  padding-left: 20px;
+  //  display: grid;
+  //  grid: auto/auto;
+  // justify-content: center;
 
   // .video-grid-container h4 {
   //   margin-top: 20px;

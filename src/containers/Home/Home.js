@@ -10,14 +10,13 @@ export class Home extends React.Component {
       <>
         <SideBar />
         <div className="home">
-          <div className="video-grid-container">
+          {/* <div className="video-grid-container"> */}
             <VideoGrid title="Trending" />
             <VideoGrid title="Antique Dolls" hideDivider={true} />
           </div>
-        </div>
+        {/* </div> */}
       </>
     );
   }
 }
 
-export default Home;

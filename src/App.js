@@ -1,17 +1,18 @@
-import React, { Component } from "react";
-import HeaderNav from "./containers/HeaderNav/HeaderNav";
-import { SideBar } from "./containers/SideBar/SideBar";
-import { Home } from "./containers/Home/Home";
-// import "./App.css";
+import React, {Component} from 'react';
+import {Home} from './containers/Home/Home';
+import {WatchVideo} from './containers/WatchVideo/WatchVideo';
+import {AppLayout} from './components/AppLayout/AppLayout';
+import {Route, Switch} from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
-      <React.Fragment>
-        <HeaderNav />
-        <SideBar />
-        <Home />
-      </React.Fragment>
+      <AppLayout>
+        <Switch>
+          <Route path="/WatchVideo" component={WatchVideo}/>
+          <Route path="/" component={Home}/>
+        </Switch>
+      </AppLayout>
     );
   }
 }
