@@ -1,7 +1,8 @@
 import React from 'react';
 import './Watch.scss';
 import {VideoPreview} from '../../components/VideoPreview/VideoPreview';
-
+import {RelatedVideos} from '../../components/RelatedVideos/RelatedVideos';
+import { Divider } from 'semantic-ui-react';
 
 export class Watch extends React.Component {
   render() {
@@ -9,7 +10,7 @@ export class Watch extends React.Component {
       <>
         {/* Static for now */}
         <VideoPreview horizontal={true}/>
-        <VideoPreview />
+        <RelatedVideos/>
         </>
     );
   }

@@ -3,6 +3,7 @@
 .video-preview {
   display: grid;
   grid: 118px auto / 210px;
+  margin-left: 20px;
 
   /*
      override grid settings to make VideoPreview horizontal.

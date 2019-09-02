@@ -1,0 +1,17 @@
+.next-up-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;     /* maximize the space between its direct descendants. By doing so, the container 
+    automatically floats the heading to the left and the autoplay toggle and span to the right. 
+    That’s why this .next-up-container class has exactly two direct descendants */
+
+    .up-next-toggle {
+        display: flex;
+        // align-items: center; /* for vertical alignment */
+
+        span {
+            margin-right: 10px;  
+            
+        }
+    }  
+}

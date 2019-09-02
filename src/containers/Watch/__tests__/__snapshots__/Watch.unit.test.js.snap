@@ -5,6 +5,6 @@ exports[`Watch renders 1`] = `
   <VideoPreview
     horizontal={true}
   />
-  <VideoPreview />
+  <RelatedVideos />
 </Fragment>
 `;

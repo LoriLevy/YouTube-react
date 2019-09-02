@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 const API = 'AIzaSyB9AGzlKUzrgdfhytySl-WqFcbdM3gxDgc'
 //const channelID = 'UCXgGY0wkgOzynnHvSEVmE3A'
 const result = 5;
-const searchList = "antique dolls %7C antique miniature dolls"; //%7C is the pipe symbol
-const sortBy = "relevance" //date, rating, relevance, title, viewCount
+const searchList = 'antique dolls %7C antique miniature dolls'; //%7C is the pipe symbol
+const sortBy = 'relevance' //date, rating, relevance, title, viewCount
 // https://www.googleapis.com/youtube/v3/search?key=AIzaSyB9AGzlKUzrgdfhytySl-WqFcbdM3gxDgc&channelId=UCXgGY0wkgOzynnHvSEVmE3A&part=snippet,id&order=date&maxResults=10
 
 // var finalURL = `https://www.googleapis.com/youtube/v3/search?key=${API}&channelId=${channelID}&part=snippet,id&order=date&maxResults=${result}`
@@ -31,8 +31,8 @@ class Youtube extends Component {
             .then((response) => response.json())
             .then((responseJson) => {
                 // console.log(responseJson);
-                //const resultyt = responseJson.items.map(obj => "https://www.youtube.com/embed/" + obj.id.videoId);
-                const resultyt = responseJson.items.map(obj => "https://www.youtube.com/embed/" + obj.id.videoId);
+                //const resultyt = responseJson.items.map(obj => 'https://www.youtube.com/embed/' + obj.id.videoId);
+                const resultyt = responseJson.items.map(obj => 'https://www.youtube.com/embed/' + obj.id.videoId);
                 this.setState({ resultyt });
             })
             .catch((error) => {
@@ -52,9 +52,9 @@ class Youtube extends Component {
                 {
                     this.state.resultyt.map((link, i) => {
                         console.log(link);
-                        var frame = <div key={i} className="youtube">
-                            <iframe title="my-title" width="560" height="315" src={link}
-                                frameBorder="0" allowFullScreen>
+                        var frame = <div key={i} className='youtube'>
+                            <iframe title='my-title' width='560' height='315' src={link}
+                                frameBorder='0' allowFullScreen>
                             </iframe></div>
                         return frame;
                     })

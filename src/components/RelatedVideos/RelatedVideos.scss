@@ -1,0 +1,11 @@
+.related-videos {
+    & > * {
+      margin-top: 4px;
+    }
+    
+    max-width:402px;
+
+    h4 {
+        margin-left: 20px;
+    }
+  }

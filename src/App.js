@@ -9,8 +9,8 @@ class App extends Component {
     return (
       <AppLayout>
         <Switch>
-          <Route path="/Watch" component={Watch}/>
-          <Route path="/" component={Home}/>
+          <Route path='/Watch' component={Watch}/>
+          <Route path='/' component={Home}/>
         </Switch>
       </AppLayout>
     );
