@@ -1,10 +1,10 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import {WatchVideo} from '../WatchVideo';
+import {Watch} from '../Watch';
 
-describe("WatchVideo", () => {
+describe("Watch", () => {
     test("renders", () => {
-      const wrapper = shallow(<WatchVideo/>);
+      const wrapper = shallow(<Watch/>);
       expect(wrapper).toMatchSnapshot();
     });
   });

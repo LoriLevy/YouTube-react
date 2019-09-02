@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Watch renders 1`] = `
+<Fragment>
+  <VideoPreview
+    horizontal={true}
+  />
+  <VideoPreview />
+</Fragment>
+`;

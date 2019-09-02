@@ -2,7 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 import { VideoGrid } from "../VideoGrid";
 
-descibe("VideoGrid", () => {
+describe("VideoGrid", () => {
   test("renders without props", () => {
     const wrapper = shallow(<VideoGrid />);
     expect(wrapper).toMatchSnapshot();

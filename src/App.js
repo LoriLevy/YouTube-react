@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Home} from './containers/Home/Home';
-import {WatchVideo} from './containers/WatchVideo/WatchVideo';
+import {Watch} from './containers/Watch/Watch';
 import {AppLayout} from './components/AppLayout/AppLayout';
 import {Route, Switch} from 'react-router-dom';
 
@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <AppLayout>
         <Switch>
-          <Route path="/WatchVideo" component={WatchVideo}/>
+          <Route path="/Watch" component={Watch}/>
           <Route path="/" component={Home}/>
         </Switch>
       </AppLayout>
