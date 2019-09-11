@@ -1,0 +1,25 @@
+.rating { /* root element */
+    display: inline-grid;
+    grid: auto auto / max-content max-content;  /*  max-content max-content means cram the entire content into the column without introducing additional line-breaks  */
+    column-gap: 16px;
+    grid-row-gap: 4px;
+
+    .thumbs-up {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .thumbs-down {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;   /* Same row as thumbs-up */
+    }
+
+    .progress {
+        grid-column: 1 / span 2;  /* span 2 columns  */
+        grid-row: 2 / 3;   /*  row below thumbs-up/thumbs-down  */
+
+        &.ui.progress:last-child {
+            margin-bottom: 0;   /* Remove the margin that the Semantic progress bar has by default */
+        }
+    }
+}

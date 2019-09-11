@@ -1,0 +1,27 @@
+@import '../../styles/shared.scss';
+
+.video-metadata {
+    color: #707070;
+    font-size: 16px;
+    padding-left: 15px;
+
+    h3 {
+        color: $text-color-dark;
+        font-weight: 400;
+    }
+    .video-stats {
+        display: flex;
+        justify-content: space-between; /* maximize the space between children by floating the views th the left and the stats to the right */
+        width: 100%;
+        align-items: center;            /* vertical alignment */
+
+    }
+
+    .video-actions {
+        display: flex;
+        align-items: center;            /* vertical alignment */
+            & > *:not(:last-child) {
+                margin-right: 8px;
+            }
+    }
+}
