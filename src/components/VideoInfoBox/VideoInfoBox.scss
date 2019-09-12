@@ -1,63 +1,62 @@
-@import '../../styles/shared.scss';
+@import "../../styles/shared.scss";
 
 .video-info-box {
-    display: grid;
-    grid: auto auto / 58px auto max-content; /* 2 rows / 3 cols  ( & the last never wraps) */
-    align-items: top;
-    grid-row-gap: 16px;
-    padding-left: 15px;
+  display: grid;
+  grid: auto auto / 58px auto max-content; /* 2 rows / 3 cols  ( & the last never wraps) */
+  align-items: top;
+  grid-row-gap: 16px;
+  padding-left: 15px;
 
-    .channel-image {
-        grid-row: 1 / 2;
-        grid-column: 1 / 2;
+  .channel-image {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+
+  .video-info {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+
+    .subscribe {
+      grid-row: 1 / 2;
+      grid-column: 3 / 4;
     }
 
-    .video-info {
-        grid-row: 1 / 2;
-        grid-column: 2 / 3;
-
-        .subscribe {
-            grid-row: 1 / 2;
-            grid-column: 3 / 4;
-        }
-    
-        .channel-name {
-            font-weight: 600;
-            color: #707070;
-        }
-
-        .video-pub-date {
-            font-size: 13px;
-            color: #707070;
-        }
-        
-        p { 
-            line-height: 1.4rem;
-            &:last-child {
-                margin-bottom: 1rem;
-            }
-        }
-
-        .collapsed{
-            max-height: 2.8rem !important; /* 2 lines */
-            overflow-y: hidden;
-        }
-
-        .expanded{
-            max-height: none;
-        }
+    .channel-name {
+      font-weight: 600;
+      color: #707070;
     }
 
-    
-
-    .video-description {
-        grid-row: 2 / 3;
-        grid-column: 2 / 3;
-        max-width: 600px;
-    
-        button {
-            margin: 8px 0;
-            // justify-content: end;
-        }
+    .video-pub-date {
+      font-size: 13px;
+      color: #707070;
     }
+
+    button.button.youtube {
+      float: right;
+    }
+
+    p {
+      line-height: 1.4rem;
+    }
+
+    .collapsed {
+      max-height: 2.8rem !important; /* 2 lines */
+      overflow-y: hidden;
+    }
+
+    .expanded {
+      max-height: none;
+    }
+  }
+
+  .video-description {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    max-width: 600px;
+    margin-bottom: 1rem;
+
+    button {
+      margin: 8px 0;
+    }
+  }
 }

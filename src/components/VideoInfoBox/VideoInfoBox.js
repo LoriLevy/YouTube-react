@@ -24,9 +24,10 @@ if(this.state.collapsed) {
             <div className="video-info-box">
                 <Image clasName="channel-image" src='http://via.placeholder.com/48x48' circular/>
                 <div className='video-info'>
+                <Button color='youtube'>61.8k Subscribe</Button>
                     <div className='channel-name'>Channel Name</div>
                     <div className='video-pub-date'>Tuesday, June 25, 2019</div>
-                    <Button color='youtube'>61.8k Subscribe</Button>
+                    
 
                     <div className='video-description'>
                         <div className={descriptionTextClass}>
