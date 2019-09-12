@@ -24,34 +24,34 @@ The first col will be auto-width, the last one must be 402px wide */
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
-  .metadata {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    width: 100%;
-    height: 100px;
-    background: #f91112;
-    color: whitesmoke;
-    text-align: center;
-  }
+  // .metadata {
+  //   grid-column: 1 / 2;
+  //   grid-row: 2 / 3;
+  //   width: 100%;
+  //   height: 100px;
+  //   background: #f91112;
+  //   color: whitesmoke;
+  //   text-align: center;
+  // }
 
-  .video-info-box {
-    grid-column: 1 / 2; 
-    grid-row: 3 / 4;
-    width: 100%;
-    height: 100px;
-    background: #bd10e0;
-    color: whitesmoke;
-    text-align: center;
-  }
-  .comments {
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
-    width: 100%;
-    height: 100px;
-    background: #9013fe;
-    color: whitesmoke;
-    text-align: center;
-  }
+  // .video-info-box {
+  //   grid-column: 1 / 2; 
+  //   grid-row: 3 / 4;
+  //   width: 100%;
+  //   height: 100px;
+  //   // background: #bd10e0;
+  //   color: whitesmoke;
+  //   // text-align: center;
+  // }
+  // .comments {
+  //   grid-column: 1 / 2;
+  //   grid-row: 4 / 5;
+  //   width: 100%;
+  //   height: 100px;
+  //   background: #9013fe;
+  //   color: whitesmoke;
+  //   text-align: center;
+  // }
   .related-videos {
     grid-column: 2 / 3;
     grid-row: 1 / span 4;

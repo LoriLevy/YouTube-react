@@ -33,13 +33,11 @@
         
         p { 
             line-height: 1.4rem;
-            &:last-child {
-                margin-bottom: 1rem;
-            }
+            margin-bottom: 0 ;
         }
 
         .collapsed{
-            max-height: 2.8rem !important; /* 2 lines */
+            max-height: 2.8rem; /* 2 lines */
             overflow-y: hidden;
         }
 
@@ -57,7 +55,7 @@
     
         button {
             margin: 8px 0;
-            // justify-content: end;
+            justify-content: end;
         }
     }
 }
