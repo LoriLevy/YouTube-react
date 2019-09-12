@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-const API = 'AIzaSyB9AGzlKUzrgdfhytySl-WqFcbdM3gxDgc'
+const API = 'YOUR_API_KEY'
 //const channelID = 'UCXgGY0wkgOzynnHvSEVmE3A'
 const result = 5;
 const searchList = 'antique dolls %7C antique miniature dolls'; //%7C is the pipe symbol
 const sortBy = 'relevance' //date, rating, relevance, title, viewCount
-// https://www.googleapis.com/youtube/v3/search?key=AIzaSyB9AGzlKUzrgdfhytySl-WqFcbdM3gxDgc&channelId=UCXgGY0wkgOzynnHvSEVmE3A&part=snippet,id&order=date&maxResults=10
+// https://www.googleapis.com/youtube/v3/search?key=YOUR_API_KEY&channelId=UCXgGY0wkgOzynnHvSEVmE3A&part=snippet,id&order=date&maxResults=10
 
 // var finalURL = `https://www.googleapis.com/youtube/v3/search?key=${API}&channelId=${channelID}&part=snippet,id&order=date&maxResults=${result}`
 

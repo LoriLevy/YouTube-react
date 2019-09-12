@@ -1,10 +1,10 @@
 import React, { Component, useState } from 'react';
 
-const API = 'AIzaSyB9AGzlKUzrgdfhytySl-WqFcbdM3gxDgc'
+const API = 'YOUR_API_KEY'
 const channelID = 'UCXgGY0wkgOzynnHvSEVmE3A'
 const result = 5;
 
-// https://www.googleapis.com/youtube/v3/search?key=AIzaSyB9AGzlKUzrgdfhytySl-WqFcbdM3gxDgc&channelId=UCXgGY0wkgOzynnHvSEVmE3A&part=snippet,id&order=date&maxResults=10
+// https://www.googleapis.com/youtube/v3/search?key=YOUR_API_KEY&channelId=UCXgGY0wkgOzynnHvSEVmE3A&part=snippet,id&order=date&maxResults=10
 
 var finalURL = `https://www.googleapis.com/youtube/v3/search?key=${API}&channelId=${channelID}&part=snippet,id&order=date&maxResults=${result}`
 
@@ -12,7 +12,7 @@ const Youtube = props => {
 
     const [resultyt, setresultyt] = useState([]);
 
-    const clicked => {
+    const clicked() => {
         setresultyt(resultyt);
     };
 
