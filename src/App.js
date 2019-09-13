@@ -9,7 +9,7 @@ import {connect} from 'react-redux';
 import {youtubeLibraryLoaded} from './store/actions/api';
 
 
-const API_KEY = 'AIzaSyB9AGzlKUzrgdfhytySl-WqFcbdM3gxDgc';
+const API_KEY = 'your_api_key';
 
 //all the same
 class App extends Component {
