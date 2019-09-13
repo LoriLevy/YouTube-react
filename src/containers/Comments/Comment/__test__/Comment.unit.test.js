@@ -4,7 +4,7 @@ import {Comment} from '../Comment';
 
 describe('Comment', () => {
     test('It renders correctly', () => {
-        const wrapper = shallow(<AComment/>);
+        const wrapper = shallow(<Comment/>);
         expect(wrapper).toMatchSnapshot();   
     });
 });
