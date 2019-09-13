@@ -8,7 +8,7 @@ const BASE_EMBED_URL = 'https://www.youtube.com/embed/';
         return null;
     }
     
-    const embedUrl = `${BASE_EMBED_URL}${props.id}?autoplay=1`;
+    const embedUrl = `${BASE_EMBED_URL}${props.id}?autoplay=0`;
     return(
         <div className='video-container'>
             <div className='video'>

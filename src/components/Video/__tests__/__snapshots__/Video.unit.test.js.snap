@@ -14,7 +14,7 @@ exports[`Video renders video component correctly 1`] = `
       allowFullScreen={true}
       frameBorder="0"
       height="350"
-      src="https://www.youtube.com/embed/DqUQW3xyQ1c?autoplay=1"
+      src="https://www.youtube.com/embed/DqUQW3xyQ1c?autoplay=0"
       title="video"
       width="560"
     />

@@ -58,6 +58,32 @@ After you install yarn you can use Yarn to start your app and your tests.<br>
 `    yarn start`<br>
 `    yarn test`
 
+### Installing Redux
+To install Redux for this app, run the command:<br>
+`   yarn add redux react-redux`<br>or
+`   npm install --save react-redux` <br> if you are using the Node Package Manager.
+
+### Installing Redux-Saga
+To install Redux for this app, run the command:<br>
+`   yarn add redux-saga`<br>or
+`   npm install --save rredux-saga` <br> if you are using the Node Package Manager.
+
+### Installing the redux-devtools-extension package from npm
+<pre><code>npm install --save-dev redux-devtools-extension
+</code></pre>
+<p>and to use like so:</p>
+<pre><code>
+import { createStore, applyMiddleware } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
+
+const store = createStore(reducer, composeWithDevTools(
+  applyMiddleware(...middleware),
+));
+</code></pre>
+
+# Installing Reselect for performance optimization
+<pre><code>yarn add reselect
+</pre></code>
 
 ## Learn More
 
