@@ -1,10 +1,11 @@
 
-export default function(state={}, action) {
-    switch(action.type) {
-        default:
-            return state;
-    }
-}
+import apiReducer from './api';
+import {combineReducers} from 'redux';
+
+
+export default combineReducers({
+    api: apiReducer  
+})
 
 /* Reducers calculate the next state based on the current state */
 /* Reducers don't change the state but, return a new object if something was changed */

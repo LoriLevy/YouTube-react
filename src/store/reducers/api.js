@@ -9,11 +9,11 @@ export default function(state=initialState, action) {
     
         case YOUTUBE_LIBRARY_LOADED:
             //success! 
-        return { libraryLoaded: true }
+        return { libraryLoaded: true };
     
     default: 
         return state;
-    }
+    };
 }
 
 // Use a selector for easier maintenance: getWhatever...
