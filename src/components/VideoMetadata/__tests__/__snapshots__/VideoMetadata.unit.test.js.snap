@@ -19,7 +19,7 @@ exports[`VideoMetadata Renders with view count 1`] = `
     >
       <Rating
         dislikeCount={100}
-        likeCount={1000}
+        likeCount={800}
       />
       <Button
         as="button"
@@ -68,7 +68,7 @@ exports[`VideoMetadata Renders without props 1`] = `
     >
       <Rating
         dislikeCount={100}
-        likeCount={1000}
+        likeCount={800}
       />
       <Button
         as="button"

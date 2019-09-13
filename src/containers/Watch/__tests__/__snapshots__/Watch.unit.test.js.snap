@@ -10,16 +10,14 @@ exports[`Watch renders 1`] = `
   />
   <VideoMetadata
     className="metadata"
-    viewCount={1000}
+    viewCount={1100}
   />
   <VideoInfoBox
     className="video-info-box"
   />
-  <div
+  <Comments
     className="comments"
-  >
-    Comments
-  </div>
+  />
   <RelatedVideos
     className="related-videos"
   />

@@ -22,7 +22,7 @@ if(this.state.collapsed) {
 
         return (
             <div className="video-info-box">
-                <Image clasName="channel-image" src='http://via.placeholder.com/48x48' circular/>
+                <Image className="channel-image" src='http://via.placeholder.com/48x48' circular/>
                 <div className='video-info'>
                 <Button color='youtube'>61.8k Subscribe</Button>
                     <div className='channel-name'>Channel Name</div>
@@ -39,18 +39,25 @@ if(this.state.collapsed) {
                         </div>
                     </div>
 
-                    <Button compact onClick={this.onToggleCollapseButtonClick}>{buttonTitle}</Button>
-                </div>
+                    <Button compact onClick={this.onToggleCollapseButtonClick}  >{buttonTitle}</Button>
+                    </div>
+                
             </div>
         );
     }
 
     onToggleCollapseButtonClick = () => {
         /* forces component to rerender */
+        
         this.setState((prevState) => {
-            return{ 
+            return { 
                 collapsed: !prevState.collapsed
             };
         });
     }
+
+
+
+
+
 }

@@ -1,0 +1,18 @@
+@import '../../../styles/shared.scss';
+
+.add-comment {
+    display: flex;
+    margin: 16px auto;
+
+    form {
+        //flex: 1;  /*  This means take up the whole remaining free space  */
+        width: 82vw;
+    }
+
+    .user-image {
+        width: $avatar-diameter;
+        height: $avatar-diameter;
+        margin-right: $avatar-margin;
+        margin-left: 15px;
+    }
+}

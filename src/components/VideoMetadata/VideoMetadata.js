@@ -13,7 +13,7 @@ export function VideoMetadata(props) {
         <div className="video-stats">
             <span>{viewCount} Views</span>
             <div className="video-actions">
-                <Rating likeCount={1000}  dislikeCount={100} />
+                <Rating likeCount={800}  dislikeCount={100} />
                 <Button basic icon labelPosition="left">
                     <Icon name="share" />
                     Share

@@ -1,0 +1,23 @@
+@import '../../../styles/shared.scss';
+
+.comment {
+    display: flex;
+    margin: 8px 15px;
+
+    .user-image {
+        width: $avatar-diameter;
+        height: $avatar-diameter;
+        margin-right: $avatar-margin;
+        margin-left: 15px;
+        flex-shrink: 0;     /* prevent user image from shrinking - keep it same size no matter what. */
+    }
+
+    .user-name {
+        font-weight: 600;
+        margin-bottom: 4px;
+
+        button { 
+            margin-left: 10px; 
+        }
+    }
+}

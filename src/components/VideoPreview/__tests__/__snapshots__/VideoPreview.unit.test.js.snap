@@ -48,7 +48,7 @@ exports[`VideoPreview it renders horizontally 1`] = `
 
 exports[`VideoPreview it renders vertically 1`] = `
 <div
-  className="video-preview horizontal"
+  className="video-preview "
 >
   <div
     className="image-container"

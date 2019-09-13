@@ -2,7 +2,9 @@
 
 .video-info-box {
   display: grid;
-  grid: auto auto / 58px auto max-content; /* 2 rows / 3 cols  ( & the last never wraps) */
+  /* grid: auto auto / 58px auto max-content; /* 2 rows / 3 cols  ( & the last never wraps) */
+
+  grid: auto auto / calc(#{$avatar-diameter} + #{$avatar-margin}) auto max-content;   /* #{$avatar-margin} convers str to num */
   align-items: top;
   grid-row-gap: 16px;
   padding-left: 15px;
