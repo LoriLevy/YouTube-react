@@ -16,7 +16,6 @@ exports[`AddComment It renders correctly 1`] = `
   >
     <FormTextArea
       as={[Function]}
-      autoHeight={true}
       control={[Function]}
       placeholder="Add your comment"
     />

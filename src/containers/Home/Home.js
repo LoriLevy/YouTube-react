@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.scss";
 import "./Home-mq.scss";
-import { VideoGrid } from "../../components/VideoGrid/VideoGrid";
+import { HomeContent } from "./HomeContent/HomeContent";
 import { SideBar } from "../SideBar/SideBar";
 
 export class Home extends React.Component {
@@ -9,12 +9,7 @@ export class Home extends React.Component {
     return (
       <>
         <SideBar />
-        <div className="home">
-          {/* <div className="video-grid-container"> */}
-            <VideoGrid title="Trending" />
-            <VideoGrid title="Antique Dolls" hideDivider={true} />
-          </div>
-        {/* </div> */}
+        <HomeContent/>  
       </>
     );
   }

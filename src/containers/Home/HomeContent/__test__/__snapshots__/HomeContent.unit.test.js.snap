@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeContent it renders 1`] = `
+<div
+  className="home-content"
+>
+  <div
+    className="responsive-video-grid-container"
+  >
+    <VideoGrid
+      title="Trending"
+    />
+    <VideoGrid
+      hideDivider={true}
+      title="Antique Dolls"
+    />
+  </div>
+</div>
+`;

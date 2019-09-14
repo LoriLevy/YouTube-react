@@ -7,7 +7,7 @@ export function AddComment() {
     <div className="add-comment">
       <Image className="user-image" src="http://via.placeholder.com/48x48" circular/>
       <Form>
-        <Form.TextArea control={TextArea} autoHeight placeholder="Add your comment" />
+        <Form.TextArea control={TextArea} placeholder="Add your comment" />
       </Form>
     </div>
   );

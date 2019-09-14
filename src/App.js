@@ -1,15 +1,12 @@
 import React, {Component} from 'react';
 import {Home} from './containers/Home/Home';
-import {Watch} from './containers/Watch/Watch';
+import Watch from './containers/Watch/Watch';
 import {AppLayout} from './components/AppLayout/AppLayout';
 import {Route, Switch} from 'react-router-dom';
 
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {youtubeLibraryLoaded} from './store/actions/api';
-
-
-const API_KEY = 'your_api_key';
 
 //all the same
 class App extends Component {
@@ -26,24 +23,10 @@ class App extends Component {
 
 
   componentDidMount() {
-    this.loadYoutubeApi();
+   // this.loadYoutubeApi();
   }
 
-  loadYoutubeApi(){
-    const script = document.createElement("script");
-    script.src="https://apis.google.com/js/client/js";
-    script.onload = () => {
-      window.gapi.load('client', () => {
-        window.gapi.client.setApiKey(API_KEY);
-        window.gapi.client.load('youtube', 'v3', () => {
-          this.props.youtubeLibraryLoaded();
-        });
-      });
-    };
 
-   
-
-  }
 
 }
 

@@ -1,0 +1,9 @@
+@import '../../../styles/shared.scss';
+
+.home-content {
+    margin-left: $sidebar-left-width;
+    display: grid;
+    grid: auto / auto;
+    justify-content: center;
+}
+

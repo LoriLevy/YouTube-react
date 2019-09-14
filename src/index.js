@@ -6,9 +6,11 @@ import * as serviceWorker from './serviceWorker';
 import 'semantic-ui-css/semantic.min.css';
 import {  Provider  } from 'react-redux';
 import {BrowserRouter} from 'react-router-dom';
-import {configureStore} from './store/configureStore';
+import {createStore, applyMiddleware} from 'redux';
+import watchReducer from './store/reducers/watch-reducer';
+import thunk from 'redux-thunk';
 
-const store = configureStore();
+const store = createStore(watchReducer, applyMiddleware(thunk));
 
 ReactDOM.render(
     <Provider store={store}>
