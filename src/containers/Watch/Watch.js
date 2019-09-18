@@ -5,29 +5,38 @@ import { Video } from "../../components/Video/Video";
 import { VideoMetadata } from "../../components/VideoMetadata/VideoMetadata";
 import { VideoInfoBox } from "../../components/VideoInfoBox/VideoInfoBox";
 import { Comments } from "../Comments/Comments";
-import { connect } from 'react-redux';
-import LoadVideoAsynch from '../../store/actions/watch-actions';
+import { connect } from "react-redux";
+import LoadVideoAsynch from "../../store/actions/watch-actions";
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
-    videoData: state.videoData
-  }
-}
+    item: state.item
+  };
+};
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = dispatch => {
   return {
-    onLoadVideo: () => dispatch(LoadVideoAsynch())   
-  }
-}
+    onLoadVideo: () => dispatch(LoadVideoAsynch())
+  };
+};
 
+// old id: DqUQW3xyQ1c  doll id should be: 3qTm8W2SNhM
 class Watch extends React.Component {
   render() {
+    console.log("this.props.item:", this.props.item);
+    // console.log("items are: ", this.props.item);
+    // if(this.props.item.statistics){
+    //     console.log("the stats are: ", this.props.item.statistics);
+    //     console.log("the viewCount is: ", this.props.item.statistics.viewCount);
+    // }
     return (
       <div className="watch-grid">
-        <div>{this.props.videoData.channelTitle}</div>
-        
+        <div>Title: {this.props.item.title}</div>
         <Video className="video" id="DqUQW3xyQ1c" />
-        <VideoMetadata className="metadata" viewCount={1100} />
+        <VideoMetadata
+          className="metadata"
+          viewCount={1100}
+        />
         <VideoInfoBox className="video-info-box" />
         <Comments className="comments" />
         <RelatedVideos className="related-videos" />
@@ -36,7 +45,7 @@ class Watch extends React.Component {
   }
 
   componentDidMount() {
-    this.props.onLoadVideo();
+    //this.props.onLoadVideo();
   }
 }
 

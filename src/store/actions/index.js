@@ -1,6 +1,12 @@
+/* file:  store/actions/index.js */
+/* Used With: SAGA */
+
 export const REQUEST = 'REQUEST';
 export const SUCCESS = 'SUCCESS';
 export const FAILURE = 'FAILURE';
+//If the request succeeded, we dispatch an action with whose action.type field ends with SUCCESS. 
+//If the request fails, we dispatch an action whose action.type filed ends with a FAILURE.
+
 
 export function createRequestTypes(base) {
   if(!base){

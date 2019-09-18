@@ -1,3 +1,4 @@
+/* File: index.js */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -9,6 +10,7 @@ import {BrowserRouter} from 'react-router-dom';
 import {createStore, applyMiddleware} from 'redux';
 import watchReducer from './store/reducers/watch-reducer';
 import thunk from 'redux-thunk';
+
 
 const store = createStore(watchReducer, applyMiddleware(thunk));
 

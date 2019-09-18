@@ -8,7 +8,7 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {youtubeLibraryLoaded} from './store/actions/api';
 
-//all the same
+
 class App extends Component {
   render() {
     return (
@@ -25,8 +25,6 @@ class App extends Component {
   componentDidMount() {
    // this.loadYoutubeApi();
   }
-
-
 
 }
 

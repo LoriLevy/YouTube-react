@@ -5,6 +5,7 @@ import { HomeContent } from "./HomeContent/HomeContent";
 import { SideBar } from "../SideBar/SideBar";
 
 export class Home extends React.Component {
+  
   render() {
     return (
       <>
@@ -12,6 +13,9 @@ export class Home extends React.Component {
         <HomeContent/>  
       </>
     );
-  }
+  } 
 }
+
+
+export default Home;
 

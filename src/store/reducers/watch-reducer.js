@@ -1,5 +1,9 @@
 const initialState = {
-    videoData: {}
+    item: {
+        viewCount: null,
+        title: null,
+        id: null
+    }
 }
 
 function watchReducer(state = initialState, action) {
@@ -8,11 +12,14 @@ function watchReducer(state = initialState, action) {
 
     switch(action.type){
         case 'LOAD_VIDEO':
-            newState.videoData = action.payload;
+            newState.item.viewCount = action.payload.statistics.viewCount;
+            newState.item.title = action.payload.snippet.title;
+            newState.item.id = action.payload.id;
+            console.log("newState: ", newState);
             return newState;
         default:
             return state;
     }
 }
 
-export default watchReducer
+export default watchReducer;
