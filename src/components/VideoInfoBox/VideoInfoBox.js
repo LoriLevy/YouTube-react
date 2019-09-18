@@ -11,15 +11,15 @@ export class VideoInfoBox extends React.Component {
             collapsed: true,
         };
     }
-    
-    
+
+
     render() {
-        let descriptionTextClass = 'collapsed';
-        let buttonTitle = 'Show More';
-        if(this.state.collapsed) {
-            descriptionTextClass = 'expanded';
-            buttonTitle = 'Show Less';
-        }
+let descriptionTextClass = 'collapsed';
+let buttonTitle = 'Show More';
+if(this.state.collapsed) {
+    descriptionTextClass = 'expanded';
+    buttonTitle = 'Show Less';
+}
 
         return (
             <div className="video-info-box">
@@ -28,7 +28,7 @@ export class VideoInfoBox extends React.Component {
                 <Button color='youtube'>61.8k Subscribe</Button>
                     <div className='channel-name'>Channel Name</div>
                     <div className='video-pub-date'>Tuesday, June 25, 2019</div>
-                    
+
 
                     <div className='video-description'>
                         <div className={descriptionTextClass}>
@@ -39,17 +39,18 @@ export class VideoInfoBox extends React.Component {
                         <p>Proin elementum iaculis lacus, nec convallis felis dignissim et. Donec sed massa a tortor efficitur rhoncus sit amet sit amet ex. Vivamus consectetur commodo turpis sed egestas. Etiam non metus ut velit egestas congue ut sit amet erat. Maecenas id dui quis ex tempus sollicitudin in ut ante. Sed ullamcorper maximus mollis. Mauris risus nibh, dapibus ut ultricies vitae, tincidunt ac nisl.</p>
                         </div>
                     </div>
+                    <Button compact onClick={this.onToggleCollapseButtonClick}>{buttonTitle}</Button>
                     </div>
-                
+
             </div>
         );
     }
 
     onToggleCollapseButtonClick = () => {
         /* forces component to rerender */
-        
+
         this.setState((prevState) => {
-            return { 
+            return {
                 collapsed: !prevState.collapsed
             };
         });
