@@ -21,14 +21,14 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-// old id: DqUQW3xyQ1c  doll id should be: 3qTm8W2SNhM
 class Watch extends React.Component {
   render() {
-    console.log("this.props.stats : ", this.props.stats);
-    console.log("this.props.snippet : ", this.props.snippet);
+    console.log("this.props.stats: ", this.props.stats);
+    console.log("this.props.snippet:" , this.props.snippet);
     return (
       <div className="watch-grid">
-        <div>Title: {this.snippet.channelTitle}</div>
+        <div>{this.props.snippet.channelTitle}</div>
+
         <Video className="video" id="DqUQW3xyQ1c" />
         <VideoMetadata
           className="metadata"
@@ -46,7 +46,10 @@ class Watch extends React.Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Watch);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Watch);
 
 /* Syntax to produce inline css means double curly braces and comma instead of semicolon
 <div className='comments' style={{width: '100%', height: '100px', background: '#9013FE'}}>comments</div>
