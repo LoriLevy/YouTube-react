@@ -10,7 +10,8 @@ import LoadVideoAsynch from "../../store/actions/watch-actions";
 
 const mapStateToProps = state => {
   return {
-    item: state.item
+    snippet: state.snippet,
+    stats: state.stats
   };
 };
 
@@ -23,19 +24,15 @@ const mapDispatchToProps = dispatch => {
 // old id: DqUQW3xyQ1c  doll id should be: 3qTm8W2SNhM
 class Watch extends React.Component {
   render() {
-    console.log("this.props.item:", this.props.item);
-    // console.log("items are: ", this.props.item);
-    // if(this.props.item.statistics){
-    //     console.log("the stats are: ", this.props.item.statistics);
-    //     console.log("the viewCount is: ", this.props.item.statistics.viewCount);
-    // }
+    console.log("this.props.stats : ", this.props.stats);
+    console.log("this.props.snippet : ", this.props.snippet);
     return (
       <div className="watch-grid">
-        <div>Title: {this.props.item.title}</div>
+        <div>Title: {this.snippet.channelTitle}</div>
         <Video className="video" id="DqUQW3xyQ1c" />
         <VideoMetadata
           className="metadata"
-          viewCount={1100}
+          viewCount={this.props.stats.commentCount}
         />
         <VideoInfoBox className="video-info-box" />
         <Comments className="comments" />
@@ -45,7 +42,7 @@ class Watch extends React.Component {
   }
 
   componentDidMount() {
-    //this.props.onLoadVideo();
+    this.props.onLoadVideo();
   }
 }
 

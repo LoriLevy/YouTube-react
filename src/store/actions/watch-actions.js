@@ -1,7 +1,6 @@
 /* File: store/actions/watch-actions.js */
-/* Used With: thunk  */
-const api_key = 'your_api_key'
-//const googleUri = 'https://www.googleapis.com/youtube/v3/search';
+
+const api_key = 'AIzaSyB9AGzlKUzrgdfhytySl-WqFcbdM3gxDgc';
 const googleUri = 'https://www.googleapis.com/youtube/v3/videos';
 let searchList = "antique dolls %7C antique miniature dolls"; //%7C is the pipe symbol
 let sortBy = "relevance" //date, rating, relevance, title, viewCount
@@ -17,26 +16,26 @@ let videoId="Ks-_Mh1QhMc"
 //let searchUrl = "https://www.googleapis.com/youtube/v3/videos?key=AIzaSyB9AGzlKUzrgdfhytySl-WqFcbdM3gxDgc&part=snippet%2CcontentDetails%2Cstatistics%2Cid&id=Ks-_Mh1QhMc&fields=items(id%2Csnippet%2Cstatistics(commentCount%2ClikeCount%2CviewCount))"
 let searchUrl = `${googleUri}?key=${api_key}&part=snippet,contentDetails,statistics,id&id=${videoId}&fields=items(id,snippet,statistics(commentCount,likeCount,viewCount))`;
 
-function LoadVideo(item) {
+function LoadVideo(props) {
     return {
       type: 'LOAD_VIDEO',
-      payload: item 
+      payload: props 
       }
 }
 
 
 function LoadVideoAsynch() {
-    return (dispatch) => {
-        fetch(searchUrl)
-            .then((response) => response.json())
-            .then((responseJson) => {
-                console.log("responseJson: ",responseJson);
-                dispatch(LoadVideo(responseJson.items[0]));
-            })
-            .catch((error) => {
-                console.error(error);
-            });
-    }
-}
+    return dispatch => {
+      fetch(searchUrl)
+        .then(response => response.json())
+        .then(responseJson => {
+          console.log(responseJson.items[0]);
+          dispatch(LoadVideo(responseJson.items[0]));
+        })
+        .catch(error => {
+          console.error(error);
+        });
+    };
+  }
 
 export default LoadVideoAsynch;
