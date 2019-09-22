@@ -58,7 +58,6 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However this tool wouldn’t be useful if you couldn’t customize it when you are ready.
-
 ### `install Yarn`
 
 For Mac developers, run this from the terminal:
@@ -75,11 +74,11 @@ To install Redux for this app, run the command:<br>
 `yarn add redux react-redux`<br>or
 `npm install --save react-redux` <br> if you are using the Node Package Manager.
 
-### Installing Redux-Saga
+### Installing Redux-thunk
 
 To install Redux for this app, run the command:<br>
-`yarn add redux-saga`<br>or
-`npm install --save rredux-saga` <br> if you are using the Node Package Manager.
+`yarn add redux-thunk`<br>or
+`npm install --save redux-thunk` <br> if you are using the Node Package Manager.
 
 ### Installing the redux-devtools-extension package from npm
 

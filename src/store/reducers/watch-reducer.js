@@ -1,6 +1,10 @@
+/* File: store/reducers/watch-reducer.js */
+
+/* set up the objects for the state */
 const initialState = {
     snippet: {},
-    stats : {}
+    stats: {}, 
+    id: {}
 }
 
 function watchReducer(state = initialState, action) {
@@ -9,8 +13,10 @@ function watchReducer(state = initialState, action) {
 
     switch(action.type){
         case 'LOAD_VIDEO':
+            /* populate the objects for the state */
             newState.snippet = action.payload.snippet;
             newState.stats = action.payload.statistics;
+            newState.id = action.payload.id;
             return newState;
         default:
             return state;

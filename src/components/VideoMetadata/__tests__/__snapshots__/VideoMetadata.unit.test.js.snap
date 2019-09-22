@@ -4,9 +4,7 @@ exports[`VideoMetadata Renders with view count 1`] = `
 <div
   className="video-metadata"
 >
-  <h3>
-    Video Title
-  </h3>
+  <h3 />
   <div
     className="video-stats"
   >
@@ -18,8 +16,8 @@ exports[`VideoMetadata Renders with view count 1`] = `
       className="video-actions"
     >
       <Rating
-        dislikeCount={100}
-        likeCount={800}
+        dislikeCount="NaN"
+        likeCount="NaN"
       />
       <Button
         as="button"
@@ -53,9 +51,7 @@ exports[`VideoMetadata Renders without props 1`] = `
 <div
   className="video-metadata"
 >
-  <h3>
-    Video Title
-  </h3>
+  <h3 />
   <div
     className="video-stats"
   >
@@ -67,8 +63,8 @@ exports[`VideoMetadata Renders without props 1`] = `
       className="video-actions"
     >
       <Rating
-        dislikeCount={100}
-        likeCount={800}
+        dislikeCount="NaN"
+        likeCount="NaN"
       />
       <Button
         as="button"

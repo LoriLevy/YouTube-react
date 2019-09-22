@@ -5,11 +5,11 @@ import Watch from '../Watch';
 import thunk from 'redux-thunk';
 import {  Provider  } from 'react-redux';
 
-const middleware = [thunk];
-const mockStore = configureStore(middleware);
+const middlewares = [thunk]
+const mockStore = configureStore(middlewares)
 const initialState = {
   example: {}
-};
+}
 const store = mockStore(initialState);
 
 describe('Watch', () => {
@@ -18,4 +18,3 @@ describe('Watch', () => {
       expect(wrapper).toMatchSnapshot();
     });
   }); 
-  
