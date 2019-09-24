@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { VideoPreview } from '../VideoPreview';
+import VideoPreview from '../VideoPreview';
 
 describe(VideoPreview, () => {
   test('it renders vertically', () => {

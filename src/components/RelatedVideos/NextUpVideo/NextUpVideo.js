@@ -1,7 +1,8 @@
+/* file: src/components/RelatedVideos/NextUpVideo/NextUpVideo.js */
 import React from 'react';
 import './NextUpVideo.scss';
 import { Checkbox, Divider } from 'semantic-ui-react';
-import {VideoPreview} from '../../VideoPreview/VideoPreview';
+import VideoPreview from '../../VideoPreview/VideoPreview';
 
 
 function NextUpVideo(props) {

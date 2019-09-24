@@ -1,9 +1,10 @@
+/* File: src/components/Video/Video.js */
 import React from 'react';
 import './Video.scss';
 
 const BASE_EMBED_URL = 'https://www.youtube.com/embed/';
 
- export function Video(props) {
+ function Video(props) {
     if(!props.id) {
         return null;
     }
@@ -18,3 +19,4 @@ const BASE_EMBED_URL = 'https://www.youtube.com/embed/';
         </div>                
     );
  }
+ export default Video;

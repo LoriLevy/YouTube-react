@@ -1,11 +1,11 @@
+/* src/components/VideoMetadata/VideoMetadata.js */
+
 import React from 'react';
 import {Button, Divider, Icon } from 'semantic-ui-react';
 import './VideoMetadata.scss';
 import Rating from '../Rating/Rating';
 
-
-
-export function VideoMetadata(props) {
+function VideoMetadata(props) {
 
     const viewCount = Number(props.viewCount).toLocaleString() || '';
     const likeCount = Number(props.likeCount).toLocaleString() || '';
@@ -33,3 +33,4 @@ export function VideoMetadata(props) {
     </div>
    );
 }
+export default VideoMetadata;

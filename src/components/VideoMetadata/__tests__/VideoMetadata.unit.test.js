@@ -1,5 +1,5 @@
 import React from 'react';
-import {VideoMetadata} from '../VideoMetadata';
+import VideoMetadata from '../VideoMetadata';
 import {shallow} from 'enzyme';
 
 describe('VideoMetadata', ()=> {

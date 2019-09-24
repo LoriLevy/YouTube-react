@@ -2,10 +2,9 @@ import React from "react";
 import { Image } from "semantic-ui-react";
 import "./VideoPreview.scss";
 
-export class VideoPreview extends React.Component {
-  
-  render() {
-    const horizontal = this.props.horizontal ? 'horizontal': null;
+function VideoPreview(props) {
+
+    const horizontal = props.horizontal ? 'horizontal': null;
     return (    
       <div className={['video-preview', horizontal].join(' ')}>
         <div className='image-container'>
@@ -27,5 +26,5 @@ export class VideoPreview extends React.Component {
         </div>
       </div>
     );
-  }
 }
+export default VideoPreview;

@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import { VideoGrid } from "../VideoGrid";
+import VideoGrid from "../VideoGrid";
 
 describe("VideoGrid", () => {
   test("renders without props", () => {

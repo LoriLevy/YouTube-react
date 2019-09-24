@@ -1,3 +1,4 @@
+/* file: src/components/Rating/Rating.js */
 import React from 'react';
 import './Rating.scss';
 import {Icon, Progress} from 'semantic-ui-react';

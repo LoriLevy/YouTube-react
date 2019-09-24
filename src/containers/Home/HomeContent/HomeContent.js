@@ -1,5 +1,5 @@
 import React from "react";
-import { VideoGrid } from "../../../components/VideoGrid/VideoGrid";
+import VideoGrid from "../../../components/VideoGrid/VideoGrid";
 import "./HomeContent.scss";
 import "./HomeContent-mq.scss";
 
