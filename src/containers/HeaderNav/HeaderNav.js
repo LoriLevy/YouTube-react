@@ -3,8 +3,7 @@ import { Form, Icon, Image, Input, Menu } from "semantic-ui-react";
 import "./HeaderNav.scss";
 import logo from "../../assets/images/logo.jpg";
 
-export class HeaderNav extends React.Component {
-  render() {
+function HeaderNav()  {
     return (
       <Menu borderless className="top-menu" fixed="top">
         <Menu.Item header className="logo">
@@ -39,6 +38,5 @@ export class HeaderNav extends React.Component {
       </Menu>
     );
   }
-}
 
 export default HeaderNav;

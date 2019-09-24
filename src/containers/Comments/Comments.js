@@ -4,15 +4,17 @@ import {AddComment} from "./AddComment/AddComment";
 import {Comment} from "./Comment/Comment";
 import {Divider} from 'semantic-ui-react';
 
-export class Comments extends React.Component {
-  render() {
+function Comments({amountComments}) {
+  
     return( 
       <div>
       <Divider className="comments-divider"/> 
-        <CommentsHeader amountComments={this.props.amountComments}/>
+        <CommentsHeader amountComments={amountComments}/>
         <AddComment />
         <Comment /><Comment /><Comment />
       </div>
     );
   }
-}
+
+  
+export default Comments;

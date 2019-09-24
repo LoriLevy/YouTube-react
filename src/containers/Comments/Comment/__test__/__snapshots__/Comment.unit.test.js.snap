@@ -15,7 +15,7 @@ exports[`Comment It renders correctly 1`] = `
     <div
       className="user-name"
     >
-      User Name
+      My User Name
     </div>
     <span>
       Comment text

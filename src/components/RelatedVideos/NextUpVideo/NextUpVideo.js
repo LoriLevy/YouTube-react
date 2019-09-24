@@ -4,7 +4,7 @@ import { Checkbox, Divider } from 'semantic-ui-react';
 import {VideoPreview} from '../../VideoPreview/VideoPreview';
 
 
-export function NextUpVideo(props) {
+function NextUpVideo(props) {
     return (
         <>
         <div className='next-up-container'>
@@ -19,3 +19,4 @@ export function NextUpVideo(props) {
         </>
     );
 }
+export default NextUpVideo;

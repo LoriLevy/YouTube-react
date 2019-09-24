@@ -1,6 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import {NextUpVideo} from '../NextUpVideo';
+import NextUpVideo from '../NextUpVideo';
 
 describe('NextUpVideo', () => {
     test('renders', () => {

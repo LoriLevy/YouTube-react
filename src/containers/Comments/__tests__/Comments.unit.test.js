@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {shallow} from 'enzyme';
-import {Comments} from '../Comments';
+import Comments from '../Comments';
+
+//const [amountComment, setAmountComments] = useState(112499);
 
 describe('Comments', () => {
   test('renders without props', () => {
@@ -16,4 +18,4 @@ describe('Comments', () => {
     );
     expect(wrapper).toMatchSnapshot();
   });
-})
+});

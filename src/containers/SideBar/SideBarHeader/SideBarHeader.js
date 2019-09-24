@@ -2,7 +2,7 @@ import React from 'react';
 import { Menu } from 'semantic-ui-react';
 import './SideBarHeader.scss';
 
-export function SideBarHeader(props) {
+function SideBarHeader(props) {
     const heading = props.title ? props.title : '';
     return (
         <Menu.Item>
@@ -10,3 +10,4 @@ export function SideBarHeader(props) {
         </Menu.Item>
     );
 }
+export default SideBarHeader;

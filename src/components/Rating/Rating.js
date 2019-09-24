@@ -2,7 +2,7 @@ import React from 'react';
 import './Rating.scss';
 import {Icon, Progress} from 'semantic-ui-react';
 
-export function Rating(props) {
+function Rating(props) {
     let progress= null;
     if(props.likeCount && props.dislikeCount) {
         const percent = 100 * (props.likeCount / (props.likeCount + props.dislikeCount));
@@ -22,3 +22,4 @@ export function Rating(props) {
         </div>
     );
 }
+export default Rating;

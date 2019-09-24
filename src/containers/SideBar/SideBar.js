@@ -1,12 +1,12 @@
 import React from "react";
 import { Menu, Divider } from "semantic-ui-react";
 import "./SideBar.scss";
-import { SideBarHeader } from "./SideBarHeader/SideBarHeader";
-import { SideBarItem } from "./SideBarItem/SideBarItem";
-import { SideBarFooter } from "./SideBarFooter/SideBarFooter";
+import SideBarHeader from "./SideBarHeader/SideBarHeader";
+import SideBarItem from "./SideBarItem/SideBarItem";
+import SideBarFooter from "./SideBarFooter/SideBarFooter";
 
-export class SideBar extends React.Component {
-  render() {
+function SideBar() {
+  
     return (
       // fixed='left' is display: fixed
       <Menu borderless vertical stackable fixed="left" className="side-nav">
@@ -32,4 +32,5 @@ export class SideBar extends React.Component {
       </Menu>
     );
   }
-}
+  
+export default SideBar;

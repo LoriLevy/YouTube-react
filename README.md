@@ -44,7 +44,7 @@ You will also see any lint errors in the console.
 
 ### Start the app
 
-`npm test`<br> or
+`npm start`<br> or
 `yarn start`
 
 ### `npm run build`

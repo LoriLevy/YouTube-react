@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, Divider, Icon } from 'semantic-ui-react';
 import './VideoMetadata.scss';
-import {Rating} from '../Rating/Rating';
+import Rating from '../Rating/Rating';
 
 
 

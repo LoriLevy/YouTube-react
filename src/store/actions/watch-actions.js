@@ -20,11 +20,9 @@ function LoadVideoAsynch() {
       try {
         const response = await fetch(searchUrl);
         const result = await response.json();
-        dispatch(LoadVideo(result.items[0]));
-        throw "Testing an error!";
+        dispatch(LoadVideo(result.items[0]));        
       } catch (err) {
         console.log("error: ", err);
-        //TODO: Look up throwing errors and try it....
       }
     }
     getData();

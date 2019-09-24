@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import "./Watch.scss";
-import { RelatedVideos } from "../../components/RelatedVideos/RelatedVideos";
+import RelatedVideos from "../../components/RelatedVideos/RelatedVideos";
 import { Video } from "../../components/Video/Video";
 import { VideoMetadata } from "../../components/VideoMetadata/VideoMetadata";
 import { VideoInfoBox } from "../../components/VideoInfoBox/VideoInfoBox";
-import { Comments } from "../Comments/Comments";
+import Comments from "../Comments/Comments";
 import { useSelector, useDispatch } from "react-redux";
 import LoadVideoAsynch from "../../store/actions/watch-actions";
 
@@ -22,7 +22,7 @@ function Watch() {
   
   useEffect(() => {
     myDispatch(LoadVideoAsynch());
-  }, []);
+  }, [myDispatch]);
 
   console.log("snippet.title: ", myState.snippet.title);
   console.log("snippet.id: ", myState.id);

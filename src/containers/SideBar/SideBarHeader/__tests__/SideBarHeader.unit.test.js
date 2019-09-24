@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { SideBarHeader } from '../SideBarHeader';
+import SideBarHeader from '../SideBarHeader';
 
 describe('SideBarHeader', () => {
     test('renders the SideBarHeader with props.title=null ', () => {

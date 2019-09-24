@@ -2,7 +2,7 @@ import React from 'react';
 import { Icon, Menu } from 'semantic-ui-react';
 import './SideBarItem.scss';
 
-export function SideBarItem(props) {
+function SideBarItem(props) {
     // React will ignore custom boolean attributes, therefore we pass a string
     // we use this attribute in our SCSS for styling
     const highlight = props.highlight ? 'highlight-item' : null;
@@ -15,3 +15,4 @@ export function SideBarItem(props) {
         </Menu.Item>
     );
 }
+export default SideBarItem;
