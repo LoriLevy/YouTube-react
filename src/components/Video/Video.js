@@ -1,4 +1,4 @@
-/* File: src/components/Video/Video.js */
+/* file: src/components/Video/Video.js */
 import React from 'react';
 import './Video.scss';
 

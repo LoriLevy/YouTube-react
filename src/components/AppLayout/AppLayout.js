@@ -3,7 +3,7 @@ import React from 'react';
 import './AppLayout.scss';
 import HeaderNav from '../../containers/HeaderNav/HeaderNav';
 
-export function AppLayout(props) {
+function AppLayout(props) {
   return (
     <div className='app-layout'>
       <HeaderNav />
@@ -11,3 +11,4 @@ export function AppLayout(props) {
     </div>
   );
 }
+export default AppLayout;

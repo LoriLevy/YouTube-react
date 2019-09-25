@@ -1,6 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import {AppLayout} from '../AppLayout';
+import AppLayout from '../AppLayout';
 
 
 test('renders empty <AppLayout />', () => {

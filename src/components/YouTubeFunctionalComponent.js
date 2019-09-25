@@ -1,3 +1,4 @@
+/* file: src/components/YouTubeFunctionalComponent.js  */
 import React, { Component, useState } from 'react';
 
 const API = 'YOUR_API_KEY'
@@ -21,7 +22,7 @@ const Youtube = props => {
 
     
     clicked() {
-        fetch(finalURL)
+        fetch(finalURL) 
             .then((response) => response.json())
             .then((responseJson) => {
                 // console.log(responseJson);
@@ -52,7 +53,7 @@ const Youtube = props => {
 
             </div>
         );
-    
+             
 }
 
 export default Youtube;

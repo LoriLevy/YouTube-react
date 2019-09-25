@@ -1,3 +1,4 @@
+/* file: src/containers/Comments/Comment/Comment.js */
 import React from 'react';
 import './Comment.scss';
 import { Button, Image } from 'semantic-ui-react';

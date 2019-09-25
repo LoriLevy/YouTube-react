@@ -1,3 +1,4 @@
+/* file: src/containers/Comments/AddComment/AddComment.js */
 import React from "react";
 import "./AddComment.scss";
 import { Form, Image, TextArea } from "semantic-ui-react";

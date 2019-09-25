@@ -1,10 +1,12 @@
+/* src/containers/Home/HomeContent/HomeContent.js */
+/* file: src/containers/Home/HomeContent/HomeContent.js */
 import React from "react";
 import VideoGrid from "../../../components/VideoGrid/VideoGrid";
 import "./HomeContent.scss";
 import "./HomeContent-mq.scss";
 
-export class HomeContent extends React.Component {
-    render() {
+function HomeContent() {
+    
       return (
         <div className="home-content">
             <div className="responsive-video-grid-container">
@@ -13,5 +15,5 @@ export class HomeContent extends React.Component {
             </div>
         </div>
       );
-    }
   }
+  export default HomeContent;

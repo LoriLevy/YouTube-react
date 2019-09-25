@@ -1,3 +1,4 @@
+/* file: src/components/VideoGrid/VideoGridHeader/VideoGridHeader.js */
 import React from 'react';
 import './VideoGridHeader.scss';
 

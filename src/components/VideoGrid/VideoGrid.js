@@ -1,3 +1,4 @@
+/* src/components/VideoGrid/VideoGrid.js */
 import React from 'react';
 import './VideoGrid.scss';
 import { Divider } from 'semantic-ui-react';

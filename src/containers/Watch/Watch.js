@@ -10,17 +10,12 @@ import { useSelector, useDispatch } from "react-redux";
 import LoadVideoAsynch from "../../store/actions/watch-actions";
 
 function Watch() {
-
-
   const myState = useSelector(state => {
-    return {  snippet: state.snippet, 
-              stats: state.stats, 
-              id: state.id };
+    return { snippet: state.snippet, stats: state.stats, id: state.id };
   });
-  
 
   const myDispatch = useDispatch();
-  
+
   useEffect(() => {
     myDispatch(LoadVideoAsynch());
   }, [myDispatch]);

@@ -1,3 +1,4 @@
+/* file: src/containers/Comments/Comments.js */
 import React from 'react';
 import {CommentsHeader} from "./CommentsHeader/CommentsHeader";
 import {AddComment} from "./AddComment/AddComment";

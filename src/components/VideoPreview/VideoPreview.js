@@ -1,3 +1,4 @@
+/* file: src/components/VideoPreview/VideoPreview.js */
 import React from "react";
 import { Image } from "semantic-ui-react";
 import "./VideoPreview.scss";

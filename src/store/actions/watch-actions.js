@@ -1,6 +1,6 @@
 /* File: store/actions/watch-actions.js */
 
-const api_key = "your_api_key";
+const api_key = "AIzaSyB9AGzlKUzrgdfhytySl-WqFcbdM3gxDgc";
 const googleUri = "https://www.googleapis.com/youtube/v3/videos";
 
 let videoId = "Ks-_Mh1QhMc";

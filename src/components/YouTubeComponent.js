@@ -1,3 +1,4 @@
+/* file: src/components/YouTubeComponent.js */
 import React, { Component } from 'react';
 
 const API = 'YOUR_API_KEY'

@@ -1,3 +1,4 @@
+/* file: src/containers/Comments/CommentsHeader/CommentsHeader.js */
 import React from 'react';
 import {Button, Icon} from "semantic-ui-react";
 import './CommentsHeader.scss';

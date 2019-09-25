@@ -1,3 +1,4 @@
+/* file: src/containers/HeaderNav/HeaderNav.js */
 import React from "react";
 import { Form, Icon, Image, Input, Menu } from "semantic-ui-react";
 import "./HeaderNav.scss";

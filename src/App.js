@@ -1,7 +1,8 @@
+/* file: src/App.js */
 import React, { Component } from "react";
-import { Home } from "./containers/Home/Home";
+import Home from "./containers/Home/Home";
 import Watch from "./containers/Watch/Watch";
-import { AppLayout } from "./components/AppLayout/AppLayout";
+import AppLayout from "./components/AppLayout/AppLayout";
 import { Route, Switch } from "react-router-dom";
 
 class App extends Component {
