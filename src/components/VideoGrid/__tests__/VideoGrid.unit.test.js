@@ -19,12 +19,12 @@ describe("VideoGrid", () => {
   });
 
   test("renders with a title prop", () => {
-    const wrapper = shallow(<VideoGrid title="Trending" />);
+    const wrapper = shallow(<Provider store={store}><VideoGrid title="Trending" /></Provider>);
     expect(wrapper).toMatchSnapshot();
   });
 
   test("renders without a divider", () => {
-    const wrapper = shallow(<VideoGrid hideDivider={true} />);
+    const wrapper = shallow(<Provider store={store}><VideoGrid hideDivider={true}</Provider></Provider> />);
     expect(wrapper).toMatchSnapshot();
   });
 });
