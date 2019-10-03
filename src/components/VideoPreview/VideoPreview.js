@@ -9,27 +9,27 @@ import {
 import moment from "moment";
 
 function VideoPreview(props) {
-  console.log("props are: ", props);
+  const {video} = props;
   const horizontal = props.horizontal ? "horizontal" : null;
-  const duration = props.contentDetails ? props.contentDetails.duration : null;
+  const duration = video.contentDetails ? video.contentDetails.duration : null;
   const videoDuration = getVideoDurationString(duration);
-  //console.log("videoDuration:", videoDuration);
-  const views = props.statistics.viewCount ? props.statistics.viewCount : "0";
+  const views = video.statistics.viewCount ? video.statistics.viewCount : "0";
   let viewCount = formatNumberWithCommas(views);
-  //let days = moment.duration(moment(new Date()).diff(moment(props.snippet.publishedAt)));
+  // round the number of days since typically the returned value contains a decimal
   let daysAgo = Math.round(
     moment
-      .duration(moment(new Date()).diff(moment(props.snippet.publishedAt)))
+      .duration(moment(new Date()).diff(moment(video.snippet.publishedAt)))
       .asDays()
   );
 
-  
+  // if it was one day ago, it should be "1 day ago"; if more than one day, it should be "days ago"
   const numberOfDays = daysAgo.toString();
   const singular = " day ago";
   const plural = " days ago ";
-  const thumbnaillUrl = `${props.snippet.thumbnails.medium.url}`  
   let howMany = daysAgo === 1 ? numberOfDays.concat(singular) : numberOfDays.concat(plural);
-  
+
+  const thumbnaillUrl = `${video.snippet.thumbnails.medium.url}`
+
   return (
     <div className={["video-preview", horizontal].join(" ")}>
       <div className="image-container">
@@ -40,9 +40,9 @@ function VideoPreview(props) {
       </div>
 
       <div className="video-info">
-        <div className="semi-bold show-max-two-lines">{props.snippet.localized.title}</div>
+        <div className="semi-bold show-max-two-lines">{video.snippet.localized.title}</div>
         <div className="video-preview-metadata-container">
-          <div className="channel-title">{props.snippet.channelTitle}</div>
+          <div className="channel-title">{video.snippet.channelTitle}</div>
           <div>
             <span>{viewCount} views • {howMany}</span>
           </div>
