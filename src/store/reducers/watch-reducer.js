@@ -8,7 +8,6 @@ const initialState = {
 }
 
 function watchReducer(state = initialState, action) {
-
     const newState = {...state};
 
     switch(action.type){
@@ -18,6 +17,7 @@ function watchReducer(state = initialState, action) {
             newState.stats = action.payload.statistics;
             newState.id = action.payload.id;
             return newState;
+        
         default:
             return state;
     }

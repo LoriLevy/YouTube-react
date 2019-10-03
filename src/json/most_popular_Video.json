@@ -1,0 +1,118 @@
+
+  {
+    "items": [
+     {
+      "kind": "youtube#video",
+      "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/SVEdh1bxdgeTv1J1VnsC9OpLgcw\"",
+      "id": "NEAWC9eK1Ts",
+      "snippet": {
+       "publishedAt": "2019-09-27T17:00:02.000Z",
+       "channelId": "UC0ZV6M2THA81QT9hrVWJG3A",
+       "title": "Apex Legends Season 3 – Meltdown Launch Trailer",
+       "description": "Welcome to World’s Edge, a new Apex Legends map where molten heat and chemical ice collide. Join our cast of Legends – including the newest Legend, Crypto – on the dropship as they’re whisked from Planet Solace towards World’s Edge on Planet Talos.\n\nSpecial thanks to GerryArthur, Lilith_luxe, py-bun, totsdraw, feyspeaker, Cash_Mayo and Weta Workshop for the use of their amazing artwork and content.\n \nPlay for free now on Xbox One, PlayStation 4, and Origin for PC: http://x.ea.com/57366.\n \nCheck out our YouTube channel: http://x.ea.com/56710.\nFollow us on Twitter: https://twitter.com/playapex.\nFollow us on Instagram: https://www.instagram.com/playapex/.",
+       "thumbnails": {
+        "default": {
+         "url": "https://i.ytimg.com/vi/NEAWC9eK1Ts/default.jpg",
+         "width": 120,
+         "height": 90
+        },
+        "medium": {
+         "url": "https://i.ytimg.com/vi/NEAWC9eK1Ts/mqdefault.jpg",
+         "width": 320,
+         "height": 180
+        },
+        "high": {
+         "url": "https://i.ytimg.com/vi/NEAWC9eK1Ts/hqdefault.jpg",
+         "width": 480,
+         "height": 360
+        },
+        "standard": {
+         "url": "https://i.ytimg.com/vi/NEAWC9eK1Ts/sddefault.jpg",
+         "width": 640,
+         "height": 480
+        },
+        "maxres": {
+         "url": "https://i.ytimg.com/vi/NEAWC9eK1Ts/maxresdefault.jpg",
+         "width": 1280,
+         "height": 720
+        }
+       },
+       "channelTitle": "Apex Legends",
+       "tags": [
+        "Apex Legends",
+        "Apex",
+        "Apex Legends game",
+        "Season 3",
+        "Meltdown",
+        "new legend",
+        "Apex Legends event",
+        "new Apex Legend",
+        "Apex Legend",
+        "ps4",
+        "Xbox",
+        "PC",
+        "Origin",
+        "Battle Royale game",
+        "Battle Royale",
+        "Battle Royale shooter",
+        "Apex Games",
+        "Respawn Entertainment",
+        "Electronic Arts",
+        "EA",
+        "fun battle royale",
+        "battle pass",
+        "new map"
+       ],
+       "categoryId": "20",
+       "liveBroadcastContent": "none",
+       "defaultLanguage": "en",
+       "localized": {
+        "title": "Apex Legends Season 3 – Meltdown Launch Trailer",
+        "description": "Welcome to World’s Edge, a new Apex Legends map where molten heat and chemical ice collide. Join our cast of Legends – including the newest Legend, Crypto – on the dropship as they’re whisked from Planet Solace towards World’s Edge on Planet Talos.\n\nSpecial thanks to GerryArthur, Lilith_luxe, py-bun, totsdraw, feyspeaker, Cash_Mayo and Weta Workshop for the use of their amazing artwork and content.\n \nPlay for free now on Xbox One, PlayStation 4, and Origin for PC: http://x.ea.com/57366.\n \nCheck out our YouTube channel: http://x.ea.com/56710.\nFollow us on Twitter: https://twitter.com/playapex.\nFollow us on Instagram: https://www.instagram.com/playapex/."
+       },
+       "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+       "duration": "PT2M28S",
+       "dimension": "2d",
+       "definition": "hd",
+       "caption": "false",
+       "licensedContent": false,
+       "projection": "rectangular"
+      },
+      "status": {
+       "uploadStatus": "processed",
+       "privacyStatus": "public",
+       "license": "youtube",
+       "embeddable": true,
+       "publicStatsViewable": true
+      },
+      "statistics": {
+       "viewCount": "1782776",
+       "likeCount": "154448",
+       "dislikeCount": "1434",
+       "favoriteCount": "0",
+       "commentCount": "18702"
+      },
+      "topicDetails": {
+       "topicIds": [
+        "/m/025zzc",
+        "/m/0bzvm2",
+        "/m/0403l3g"
+       ],
+       "relevantTopicIds": [
+        "/m/0bzvm2",
+        "/m/025zzc"
+       ],
+       "topicCategories": [
+        "https://en.wikipedia.org/wiki/Role-playing_video_game",
+        "https://en.wikipedia.org/wiki/Action_game",
+        "https://en.wikipedia.org/wiki/Video_game_culture"
+       ]
+      }
+     }
+    ]
+}
+    
+
+    

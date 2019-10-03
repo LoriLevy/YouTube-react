@@ -86,3 +86,27 @@
      }
     ]
    }
+
+   And the Channel stuff:
+   {
+    "kind": "youtube#channelListResponse",
+    "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/q6in3ADDhNrqstvru6XsBXfOV0k\"",
+    "pageInfo": {
+     "totalResults": 1,
+     "resultsPerPage": 1
+    },
+    "items": [
+     {
+      "kind": "youtube#channel",
+      "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/QfWSyPM0aLUxWKCX9fXQn5Dhcpg\"",
+      "id": "UCAuUUnT6oDeKwE6v1NGQxug",
+      "statistics": {
+       "viewCount": "1567464140",
+       "commentCount": "0",
+       "subscriberCount": "14900000",
+       "hiddenSubscriberCount": false,
+       "videoCount": "3113"
+      }
+     }
+    ]
+   }
