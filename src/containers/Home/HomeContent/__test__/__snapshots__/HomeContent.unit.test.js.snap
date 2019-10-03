@@ -8,7 +8,7 @@ exports[`HomeContent it renders 1`] = `
     className="responsive-video-grid-container"
   >
     <VideoGrid
-      title="Trending"
+      title="{props.categoryTitle}"
     />
     <VideoGrid
       hideDivider={true}

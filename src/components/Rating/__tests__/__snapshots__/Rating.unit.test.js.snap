@@ -11,7 +11,9 @@ exports[`No props, so see if Rating renders 1`] = `
       as="i"
       name="thumbs outline up"
     />
-    <span />
+    <span>
+      0
+    </span>
   </div>
   <div
     className="thumbs-down"
@@ -20,7 +22,9 @@ exports[`No props, so see if Rating renders 1`] = `
       as="i"
       name="thumbs outline down"
     />
-    <span />
+    <span>
+      0
+    </span>
   </div>
 </div>
 `;
