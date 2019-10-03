@@ -6,7 +6,8 @@ import moment from "moment";
 import { formatNumberWithCommas } from "../../utilities/format-number";
 
 function VideoInfoBox(props) {
-  const channelThumbnail = props.snippet.thumbnails.medium.url;
+  const {video} = props;
+  const channelThumbnail = video.snippet.thumbnails.medium.url;
   
   let subscriberCount = props.subscriberCount;
   let subscribers = 0;
@@ -26,12 +27,12 @@ function VideoInfoBox(props) {
         <Button color="youtube">{subscribers} Subscribers</Button>
         <div className="channel-name">{props.channelTitle}</div>
         <div className="video-pub-date">
-          Published: {moment(props.videoPubDate).format("MM-DD-YYYY")}
+          Published: {moment(video.videoPubDate).format("MM-DD-YYYY")}
         </div>
 
         <div className="video-description">
           <div className="expanded">
-            <Message>{props.videoDescription}</Message>
+            <Message>{video.videoDescription}</Message>
           </div>
         </div>
       </div>

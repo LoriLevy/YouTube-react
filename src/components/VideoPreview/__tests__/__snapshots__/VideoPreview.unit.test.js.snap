@@ -1,93 +1,75 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`VideoPreview it renders horizontally 1`] = `
-<div
-  className="video-preview horizontal"
+<ContextProvider
+  value={
+    Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "subscription": Subscription {
+        "handleChangeWrapper": [Function],
+        "listeners": Object {
+          "notify": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "unsubscribe": null,
+      },
+    }
+  }
 >
-  <div
-    className="image-container"
-  >
-    <Image
-      as="img"
-      src="http://via.placeholder.com/210x118"
-      ui={true}
-    />
-    <div
-      className="time-label"
-    >
-      <span>
-        05:22
-      </span>
-    </div>
-  </div>
-  <div
-    className="video-info"
-  >
-    <div
-      className="semi-bold show-max-two-lines"
-    >
-      Video title
-    </div>
-    <div
-      className="video-preview-metadata-container"
-    >
-      <div
-        className="channel-title"
-      >
-        Channel title
-      </div>
-      <div>
-        <span>
-          1699 views • 12 days ago
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
+  <VideoPreview
+    horizontal={true}
+  />
+</ContextProvider>
 `;
 
 exports[`VideoPreview it renders vertically 1`] = `
-<div
-  className="video-preview "
+<ContextProvider
+  value={
+    Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "subscription": Subscription {
+        "handleChangeWrapper": [Function],
+        "listeners": Object {
+          "notify": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "unsubscribe": null,
+      },
+    }
+  }
 >
-  <div
-    className="image-container"
-  >
-    <Image
-      as="img"
-      src="http://via.placeholder.com/210x118"
-      ui={true}
-    />
-    <div
-      className="time-label"
-    >
-      <span>
-        05:22
-      </span>
-    </div>
-  </div>
-  <div
-    className="video-info"
-  >
-    <div
-      className="semi-bold show-max-two-lines"
-    >
-      Video title
-    </div>
-    <div
-      className="video-preview-metadata-container"
-    >
-      <div
-        className="channel-title"
-      >
-        Channel title
-      </div>
-      <div>
-        <span>
-          1699 views • 12 days ago
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
+  <VideoPreview />
+</ContextProvider>
 `;

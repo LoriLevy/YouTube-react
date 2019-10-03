@@ -1,52 +1,79 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`VideoGrid renders with a title prop 1`] = `
-<Fragment>
-  <VideoGridHeader
+<ContextProvider
+  value={
+    Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "subscription": Subscription {
+        "handleChangeWrapper": [Function],
+        "listeners": Object {
+          "notify": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "unsubscribe": null,
+      },
+    }
+  }
+>
+  <VideoGrid
     title="Trending"
   />
-  <div
-    className="video-grid"
-  >
-    <VideoPreview />
-    <VideoPreview />
-    <VideoPreview />
-    <VideoPreview />
-    <VideoPreview />
-    <VideoPreview />
-    <VideoPreview />
-    <VideoPreview />
-    <VideoPreview />
-    <VideoPreview />
-    <VideoPreview />
-    <VideoPreview />
-    <VideoPreview />
-  </div>
-  <Divider />
-</Fragment>
+</ContextProvider>
 `;
 
 exports[`VideoGrid renders without a divider 1`] = `
-<Fragment>
-  <VideoGridHeader />
-  <div
-    className="video-grid"
-  >
-    <VideoPreview />
-    <VideoPreview />
-    <VideoPreview />
-    <VideoPreview />
-    <VideoPreview />
-    <VideoPreview />
-    <VideoPreview />
-    <VideoPreview />
-    <VideoPreview />
-    <VideoPreview />
-    <VideoPreview />
-    <VideoPreview />
-    <VideoPreview />
-  </div>
-</Fragment>
+<ContextProvider
+  value={
+    Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "subscription": Subscription {
+        "handleChangeWrapper": [Function],
+        "listeners": Object {
+          "notify": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "unsubscribe": null,
+      },
+    }
+  }
+>
+  <VideoGrid
+    hideDivider={true}
+  />
+</ContextProvider>
 `;
 
 exports[`VideoGrid renders without props 1`] = `

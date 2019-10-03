@@ -11,7 +11,7 @@ import moment from "moment";
 function VideoPreview(props) {
   const {video} = props;
   const horizontal = props.horizontal ? "horizontal" : null;
-  const duration = video.contentDetails ? video.contentDetails.duration : null;
+  const duration = props.contentDetails ? props.contentDetails.duration : null;
   const videoDuration = getVideoDurationString(duration);
   const views = video.statistics.viewCount ? video.statistics.viewCount : "0";
   let viewCount = formatNumberWithCommas(views);
@@ -31,6 +31,7 @@ function VideoPreview(props) {
   const thumbnaillUrl = `${video.snippet.thumbnails.medium.url}`
 
   return (
+   
     <div className={["video-preview", horizontal].join(" ")}>
       <div className="image-container">
         <Image src={thumbnaillUrl} />
@@ -49,6 +50,7 @@ function VideoPreview(props) {
         </div>
       </div>
     </div>
+    
   );
 }
 export default VideoPreview;

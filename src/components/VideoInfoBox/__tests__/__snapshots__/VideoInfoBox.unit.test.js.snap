@@ -1,44 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders renders 1`] = `
-<div
-  className="video-info-box"
+<ContextProvider
+  value={
+    Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "subscription": Subscription {
+        "handleChangeWrapper": [Function],
+        "listeners": Object {
+          "notify": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "unsubscribe": null,
+      },
+    }
+  }
 >
-  <Image
-    as="img"
-    circular={true}
-    className="channel-image"
-    onClick={[Function]}
-    src="http://via.placeholder.com/48x48"
-    ui={true}
-  />
-  <div
-    className="video-info"
-  >
-    <Button
-      as="button"
-      color="youtube"
-    >
-      61.8k Subscribers
-    </Button>
-    <div
-      className="channel-name"
-    />
-    <div
-      className="video-pub-date"
-    >
-      Published: 
-      09-25-2019
-    </div>
-    <div
-      className="video-description"
-    >
-      <div
-        className="expanded"
-      >
-        <Message />
-      </div>
-    </div>
-  </div>
-</div>
+  <VideoInfoBox />
+</ContextProvider>
 `;

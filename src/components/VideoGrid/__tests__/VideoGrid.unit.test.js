@@ -24,7 +24,7 @@ describe("VideoGrid", () => {
   });
 
   test("renders without a divider", () => {
-    const wrapper = shallow(<Provider store={store}><VideoGrid hideDivider={true}</Provider></Provider> />);
+    const wrapper = shallow(<Provider store={store}><VideoGrid hideDivider={true} /></Provider>);
     expect(wrapper).toMatchSnapshot();
   });
 });
