@@ -1,4 +1,4 @@
-export const API_KEY = "YOUR_API_KEY";
+export const API_KEY = "AIzaSyB9AGzlKUzrgdfhytySl-WqFcbdM3gxDgc";
 
 export const VIDEO_URL = "https://www.googleapis.com/youtube/v3/videos";
 export const SUBSCRIPTIONS_URL = "https://www.googleapis.com/youtube/v3/channels?part=statistics";

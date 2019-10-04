@@ -1,11 +1,12 @@
 /* src/components/VideoGrid/VideoGrid.js */
+
 import React, { useEffect } from "react";
 import "./VideoGrid.scss";
 import { Divider } from "semantic-ui-react";
 import VideoPreview from "../VideoPreview/VideoPreview";
 import { VideoGridHeader } from "./VideoGridHeader/VideoGridHeader";
 import { useSelector, useDispatch } from "react-redux";
-import LoadTrendingAsynch from "../../store/actions/trending-action";
+import LoadTrendingAsynch from "../../store/actions/videos-action";
 
 function VideoGrid() {
   const myState = useSelector(state => {

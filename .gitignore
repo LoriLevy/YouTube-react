@@ -23,3 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 src/containers/Watch/wtch-actions_bu2.js
 
+src/constants/index.js
+src/constants/index.js

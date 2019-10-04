@@ -1,12 +1,13 @@
 /* File: store/actions/trending-actions.js */
+
 import * as constants from "../../constants";
 
-//let trendingUrl= `${constants.TRENDING_URL}?key=${constants.API_KEY}&maxResults=${constants.MAX_RESULTS}`;
+// set up the url for the api call
 const trendingUrl = `${constants.TRENDING_URL}&maxResults=${constants.MAX_RESULTS}&key=${constants.API_KEY}`;
 
 function LoadTrendingVideos(videos) {
   return {
-    type: "LOAD_TRENDING_VIDEOS",
+    type: "TRENDING_VIDEOS",
     payload: videos
   };
 }

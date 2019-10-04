@@ -9,7 +9,7 @@ import {  Provider  } from 'react-redux';
 import {BrowserRouter} from 'react-router-dom';
 import {createStore, combineReducers, applyMiddleware} from 'redux';
 import watchReducer from './store/reducers/watch-reducer';
-import trendingReducer from './store/reducers/trending-reducer';
+import trendingReducer from './store/reducers/videos-reducer';
 import thunk from 'redux-thunk';
 
 const rootReducer = combineReducers({

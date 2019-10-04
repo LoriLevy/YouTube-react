@@ -1,4 +1,4 @@
-/* File: store/reducers/trending-reducer.js */
+/* File: store/reducers/videos-reducer.js */
 
 /* set up the objects for the state */
 const initialState = {
@@ -11,7 +11,7 @@ function trendingReducer(state = initialState, action) {
   const newState = { ...state };
 
   switch (action.type) {
-    case "LOAD_TRENDING_VIDEOS":
+    case "TRENDING_VIDEOS":
       /* populate the objects for the state */
 
       newState.videoCollection = action.payload;
